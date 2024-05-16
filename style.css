@@ -1,0 +1,307 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sriracha&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    height: 70px;
+    width: 100% ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 6px 30px rgb(173, 173, 173);
+    z-index: 10000;
+}
+.logo img{
+    height: 60px;
+    width: 150px;
+}
+.search img{
+    height: 40px;
+    width: 40px;
+}
+.popout{
+    position: absolute;
+    top: -450px;
+    width: 100%;
+    height: 450px;
+    background-color: rgb(255, 214, 252);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.pop{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+.pop img{
+    width: 100%;
+    height: 85%;
+    
+}
+.navlinks a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: black;
+    transition: all .5s ease;
+}
+.navlinks button{
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    font-size: 17px;
+}
+.navlinks button:hover{
+    color: rgb(255, 183, 0);
+}
+.navlinks a:hover{
+    color: rgb(255, 183, 0);
+}
+.herosection{
+    height: 100vh;
+    width: 100%;
+    
+}
+.herosection img{
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    overflow-y: hidden;
+    height: 100vh;
+    opacity: 0.9;
+    z-index: -1;
+    
+}
+#section1{
+    position: relative;
+}
+#section1 #watchfilm{
+    width: 100px;
+    height: 50px;
+    bottom: 30%;
+    left: 38%;
+    position: absolute;
+    border-radius: 15px;
+    border: none;
+    font-weight: 700;
+    font-size: 19px;
+    font-family: Arial;
+    background: transparent;
+    color: aliceblue;
+    border: 4px solid wheat;
+    z-index: 100;
+}
+#section1 #fyoa{
+    width: 300px;
+    height: 50px;
+    bottom: 30%;
+    padding: 10px;
+    left: 46%;
+    position: absolute;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    font-weight: 700;
+    z-index: 100;
+}
+#section1 #it{
+    position: absolute;
+    
+    height: 800px;
+    right: 25%;
+    z-index: 100;
+    
+}
+#section2{
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+#section2 .gallery{
+    width: 96%;
+    height: 300vh;
+    position: absolute;
+    background-color: antiquewhite;
+    border-radius: 40px;
+    bottom: 50px;
+    overflow: hidden;
+}
+.feature{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    
+}
+.feature2{
+    height: 400px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature .f1{
+    height: 250px;
+    width: 400px;
+    border-radius: 30px;
+    overflow: hidden; 
+    position: relative;
+    
+}
+.feature .f1 h2{
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    color: aliceblue;
+    text-shadow: 2px 2px 15px black;
+    
+}
+.feature .f1 img{
+    height: 100%;
+    width: 100%;
+}
+.f2{
+    width: 85%;
+    height: 350px;
+   
+    border-radius: 30px;
+    overflow: hidden;
+}
+.f2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.un{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    
+    overflow: hidden;
+}
+.unmissable h1{
+ font-family: 'Oswald';
+ color: rgb(0, 168, 168);
+ margin-left: 50px;
+}
+.un .unm{
+    width: 400px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    overflow: hidden;
+}
+.un .unm img{
+    width: 100%;
+    
+}
+.topplace h1{ 
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    color: rgb(0, 168, 168);
+    margin-left: 50px;
+   }
+.tpbtn{
+    height: 100px;
+   
+}
+.tpdsgn{
+    width: 100px;
+    height: 50px;
+   border: none;
+    color: black;
+    outline: 2px solid rgb(0, 50, 201);
+    background-color: transparent;
+    border-radius: 30px;
+    margin: 30px 20px;
+}
+.tp-d1{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    overflow: hidden;
+    
+}
+.tp-d1 .tpi{
+    width: 400px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    overflow: hidden;
+}
+.tp-d1 .tpi img{
+    width: 100%;
+}
+#section3{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(233, 231, 255);
+    text-align: center;
+}
+#section3 .flogo{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flogo img{
+    margin-top: 50px;
+}
+.ack{
+    text-align: center;
+    font-size: 25px;
+  
+}
+.fs{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    gap:30px;
+}
+.fs a{
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+}
+.dis{
+    padding: 20px;
+}
+.os h3{
+    font-weight: 400;
+
+}
+.ack a{
+    text-decoration: none;
+}
